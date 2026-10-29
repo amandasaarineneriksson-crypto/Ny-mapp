@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#240711">
+    <title>To David, With Love ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Floating hearts -->
+    <div class="hearts" aria-hidden="true">
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+    </div>
+
+    <main class="container">
+
+        <p class="eyebrow">TO SOMEONE WHO MEANS THE WORLD TO ME ❤️</p>
+
+        <div class="main-heart" aria-hidden="true">♥</div>
+
+        <h1>Happy Birthday,<br>David</h1>
+
+        <p class="subtitle">
+            To the person who holds such a special place in my heart.
+        </p>
+
+        <div class="divider">
+            <span></span>
+            ♡
+            <span></span>
+        </div>
+
+        <!-- Love letter -->
+        <section class="letter">
+
+            <p class="letter-label">A FEW WORDS FROM MY HEART</p>
+
+            <h2>My beloved Baby,</h2>
+
+            <p>
+                Happy birthday, my love. ❤️
+            </p>
+
+            <p>
+                Sometimes I wish you could see yourself through my
+                eyes, even if it were only for a little while.
+                Maybe then you would understand just how much you
+                mean to me and how much happiness you bring into
+                my life simply by being yourself.
+            </p>
+
+            <p>
+                It is difficult to explain a feeling that means
+                so much. You are not just someone I care about.
+                You are someone whose happiness matters to me,
+                someone I want to see smile, succeed, and achieve
+                all the beautiful things you dream of.
+            </p>
+
+            <p>
+                I know life will not always be perfect. There will
+                be difficult days, moments when words are not enough,
+                and times when things feel a little harder.
+                But I hope you always remember that you are valuable,
+                that you deserve love, and that you never have to
+                be anyone other than yourself to matter.
+            </p>
+
+            <p>
+                I appreciate the little things, every laugh,
+                every conversation, and every memory we get to
+                create together. Sometimes it is the smallest
+                moments that mean the most to me. They are what
+                turn an ordinary day into something special.
+            </p>
+
+            <p>
+                On your birthday, I hope you feel as appreciated
+                as you truly are. I wish you happiness, peace,
+                success, and countless beautiful moments.
+                I hope your future gives you so many reasons to smile.
+            </p>
+
+            <p>
+                Thank you for being you, David. I cannot promise
+                that every day will be perfect, but I can tell you
+                that what I feel for you is something I deeply
+                appreciate. I want to keep getting to know you,
+                making memories with you, and cherishing the time
+                we get to spend together.
+            </p>
+
+            <p class="highlight">
+                Out of all the beautiful things life can give
+                someone, I am truly grateful that you have become
+                a part of mine.
+            </p>
+
+            <p class="final-message">
+                Happy birthday, my Baby.
+                You mean more to me than words could ever explain. ❤️
+            </p>
+
+            <p class="signature">
+                With all my love,<br>
+                your girl ♡
+            </p>
+
+        </section>
+
+        <!-- Secret surprise -->
+        <section class="surprise-section">
+
+            <p class="surprise-hint">
+                There is one more thing I want you to read...
+            </p>
+
+            <button
+                id="surpriseButton"
+                type="button"
+                aria-expanded="false"
+                aria-controls="surpriseMessage">
+                Open your secret surprise 💌
+            </button>
+
+            <div id="surpriseMessage" class="surprise-message" hidden>
+
+                <div class="surprise-heart" aria-hidden="true">♥</div>
+
+                <h2>If you ever wonder...</h2>
+
+                <p>
+                    If you ever wonder how much you mean to me,
+                    I hope you remember this:
+                </p>
+
+                <p>
+                    You matter to me. Your feelings matter,
+                    your dreams matter, and you matter just as
+                    you are. You never have to do something
+                    extraordinary to deserve kindness and care.
+                </p>
+
+                <p>
+                    I am grateful that I get to know you and
+                    share moments with you. I hope we have many
+                    more laughs, memories, and beautiful days
+                    waiting for us.
+                </p>
+
+                <p class="big-love">
+                    If I could make one wish for you today,
+                    it would be that you always feel loved,
+                    appreciated, and free to be exactly who you are.
+                </p>
+
+                <p class="forever">
+                    Happy birthday, David.
+                    You have a very special place in my heart. ❤️
+                </p>
+
+            </div>
+
+        </section>
+
+        <footer>
+            <div class="footer-heart">♥</div>
+            <p>A little website, made with big feelings.</p>
+            <p>Created just for you, David. ♡</p>
+        </footer>
+
+    </main>
+
+    <script>
+        const button = document.getElementById("surpriseButton");
+        const message = document.getElementById("surpriseMessage");
+
+        button.addEventListener("click", function () {
+            const open = message.hidden;
+
+            message.hidden = !open;
+            button.setAttribute("aria-expanded", String(open));
+
+            button.textContent = open
+                ? "Close your surprise ♡"
+                : "Open your secret surprise 💌";
+
+            if (open) {
+                message.scrollIntoView({
+                    behavior: "smooth",
+                    block: "nearest"
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
